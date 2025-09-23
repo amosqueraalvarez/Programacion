@@ -18,3 +18,6 @@ cambio = euro * 1.18
 print('Su saldo en dolares es: ' + str(cambio))
 
 # acabo de hacer un cambio
+
+print("hola esto es un cambio")
+print("commit con suerte")
