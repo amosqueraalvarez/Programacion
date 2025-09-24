@@ -17,7 +17,24 @@ euro = int(input('Ingrese la cantidad que desea cambiar: '))
 cambio = euro * 1.18
 print('Su saldo en dolares es: ' + str(cambio))
 
-# acabo de hacer un cambio
+# boletin 2_4
 
-print("hola esto es un cambio")
-print("commit con suerte")
+numero1 = 3
+numero2 = 5
+
+suma = numero1 + numero2
+resta = numero1 - numero2
+multiplicacion = numero1 * numero2
+division = numero1 / numero2
+
+print(suma)
+print(resta)
+print(multiplicacion)
+print(division)
+
+# boletin 2_5
+
+distancia = 400
+distancia_metros = (distancia * 1852)
+
+print(str(distancia_metros) + (" metros."))
