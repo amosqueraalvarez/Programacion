@@ -1,4 +1,4 @@
-# Escribir un ciclo definido para imprimir por pantalla tódolos números entre	10 e 20
+# 1.Escribir un ciclo definido para imprimir por pantalla tódolos números entre	10 e 20
 '''
 t = (10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20)
 
@@ -6,7 +6,7 @@ for i in t:
     print(i)
 '''
 
-# Escribir un programa que converta un valor dado en grados Fahrenheit a grados Celsius.
+# 2.Escribir un programa que converta un valor dado en grados Fahrenheit a grados Celsius.
 # Recordade que a fórmula para a conversión é: F = 9/5 * C + 32.
 '''
 temperatura = float(input('Ingrese una temperatura en grados Fahrenheit: '))
@@ -14,7 +14,7 @@ conversion = (9/5 * temperatura) + 32
 print('Su temperatura en Celsius es: ' + str(conversion))
 '''
 
-# Utiliza o programa anterior para xerar unha táboa de conversión
+# 3.Utiliza o programa anterior para xerar unha táboa de conversión
 # de temperaturas, dende 0º F ata 120º F, de 10 en 10.
 
 '''
@@ -27,7 +27,7 @@ for i in (t):
     print(conversion)
 '''
 
-# Escribir un programa que imprima tódolos números pares entre dous números que se lle pidan o usuario
+# 4.Escribir un programa que imprima tódolos números pares entre dous números que se lle pidan o usuario
 
 '''
 numero = float(input('Ingrese un numero: '))
@@ -47,7 +47,7 @@ for i in range(0, diferencia+1, 2):
 print('No se porque funciona pero funciona')
 '''
 
-# Escribir un programa que reciba un número n por parámetro e imprima os primeiros n números triangulares,
+# 5.Escribir un programa que reciba un número n por parámetro e imprima os primeiros n números triangulares,
 # xunto co seu índice. Os números triangulares obteñense mediante a suma dos números naturales dende 1 ata n.
 # É dicir, si se piden os primeros 5 números triangulares, o programa debe imprimir:
 '''
@@ -65,3 +65,26 @@ for i in range(0, n, 1):
         print(suma)
         i += 1
 '''
+
+
+# Escribir un programa que tome unha cantidade m de valores ingresados polo usuario, a cada un lle calcule o factorial
+# e imprima o resultado xunto co número de orden correspondiente.
+
+print('''
+Bienvenido, a continuacion ingrese
+3 cantidas para realizar el 
+calculo e imprimirlo''')
+
+cantidad1 = int(input('Ingrese la primera cantidad: '))
+cantidad2 = int(input('Ingrese la segunda cantidad: '))
+cantidad3 = int(input('Ingrese la tercera cantidad: '))
+
+
+def operaciones(cantidad1, cantidad2, cantidad3):
+    sumar = cantidad1 + cantidad2 + cantidad3
+    return sumar
+
+
+l = operaciones
+operaciones()
+print(l)
