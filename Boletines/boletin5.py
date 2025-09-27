@@ -88,3 +88,4 @@ def operaciones(cantidad1, cantidad2, cantidad3):
 l = operaciones
 operaciones()
 print(l)
+ # pendiente

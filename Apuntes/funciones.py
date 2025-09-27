@@ -87,7 +87,7 @@ ejercicioBoletin()
 
 # utilizo una funcion y le paso parametros indefinidos para despues poderlo añadir
 
-
+'''
 def suma(n1, n2, *outrosNumeros):
     suma = n1 + n2
     for n in outrosNumeros:
@@ -96,3 +96,15 @@ def suma(n1, n2, *outrosNumeros):
 
 
 print(suma(3, 4, 6, 7))
+'''
+
+
+def datosPersoa(dni, nome, **datosExtendidos):
+    print('O dni e:', dni)
+    print('O nome e: ', nome)
+    for k, v in datosExtendidos.items():
+        print(k, 'e', v)
+
+    # definir como traballa cos datos
+# datosPersoa('333j', 'manuel', altura=1.82, peso=71)
+datosPersoa('333j', 'adrian', altura=176, peso=75, ciudad='vigo')

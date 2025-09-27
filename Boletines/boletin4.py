@@ -16,12 +16,13 @@ else:
                 print('Articulo de primera necesidad')
 
 '''
+
 print('''
 [1] Superficie de triangulo
 [2] Superficie de cuadrado
 [3] Superficie del circulo
 [4] Salir''')
-
+'''
 opcion = (int(input('Elija una opcion: ')))
 
 if opcion == 1:
@@ -46,3 +47,14 @@ else:
             else:
                 if opcion > 4:
                     print('No es una opcion valida')
+'''
+
+# 3. Utiliza o operador ternario para calcular o valor absoluto dun número que se solicita o usuario por teclado.
+
+
+def valorAbsoluto(x):
+    valor = abs(x)
+    return valor
+
+
+valor = (int(input('Introduce un numero: ')))
