@@ -30,19 +30,17 @@ print('El resultado de f es: ' + str(f))
 print('El resultado de g es: ' + str(g))
 
 
-'''
-2. Cales dos seguintes nomes de variables non son válidos?
+# 2. Cales dos seguintes nomes de variables non son válidos?
 
-a) Salto- mortal , salto_mortal, salto + mortal, 2salto, “salto”
-b) cantidade total, cant_total, cant5, cantidadeTotal
+# a) Salto- mortal , salto_mortal, salto + mortal, 2salto, “salto”
+# b) cantidade total, cant_total, cant5, cantidadeTotal
 
-'''
 
 print('Los nombres de variables validos en a) es salto_mortal y en b) es cantidadeTotal')
 
-'''
-#3. Expresar, utilizando operadores aritméticos, as seguintes expresións
 
+# 3. Expresar, utilizando operadores aritméticos, as seguintes expresións
+'''
 Declaro valor a cada letra para probar los resultados asignando a cada nueva variable el
 resultado de las variables del ejercicio anterior
 '''
@@ -141,6 +139,3 @@ print(octavoEjercicio)
 
 novenoEjercicio = not (a * b < d) and not (a * b < c) or b + c <= d
 print(novenoEjercicio)
-
-
-
