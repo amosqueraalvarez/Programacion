@@ -65,3 +65,53 @@ for color in colores.values():
 
 for clave in colores.keys():
     print(colores[clave])
+
+
+# lista y tupla continuacion
+
+l = [1, 2, 3, 4, 6, 7, 8]
+t = ['a', 'v']
+
+# constructores
+
+l2 = list([1, 2, 3, 4, 5])  # llamar a una lista
+
+t2 = tuple((1, 2, 3, 45, 67, 0))  # llamar a una tupla
+
+print(len(l))  # longitud de una lista
+print(len(l2))
+print(len(t2))
+
+# añadir elementos a una lista
+
+l2.append('a')
+print(l2)
+
+# añadir varios elementos
+
+l2.extend(['a', 'd', 'c'])
+print(l2)
+
+
+# otro metodo de añadir pero necesita parametros de indice donde se coloca
+
+l2.insert(0, 'z')  # indico donde tiene que ir concretamente
+print(l2)
+
+# borrar un elemento de la lista
+# va a borrar la primera que encuentra igual
+
+l2.remove('z')
+print(l2)
+
+# eliminar un valor y mirar cual quito
+
+print(l2.pop(4))
+
+# contabiliza cuantas veces aparece el valor en la lista
+
+print(l2.count('d'))
+
+# da la vuelta a la lista de forma permanente
+
+# l2.reserve()
