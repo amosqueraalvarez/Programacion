@@ -1,0 +1,53 @@
+Boletín 5. Bucles
+
+
+1. Escribir un ciclo definido para imprimir por pantalla tódolos números entre        10 e 20.
+
+
+2. Escribir un programa que converta un valor dado en grados Fahrenheit a grados Celsius. Recordade que a fórmula para a conversión é: F = 9/5 * C + 32.
+
+
+3. Utiliza o programa anterior para xerar unha táboa de conversión de temperaturas, dende 0º F ata 120º F, de 10 en 10.
+
+
+4. Escribir un programa que imprima tódolos números pares entre dous números que se lle pidan o usuario.
+
+
+5. Escribir un programa que reciba un número n por parámetro e imprima os primeiros n números triangulares, xunto co seu índice. Os números triangulares obteñense mediante a suma dos números naturales dende 1 ata n. É dicir, si se piden os primeros 5 números triangulares, o programa debe imprimir:
+1 - 1
+2 - 3
+3 - 6
+4 - 10
+5 - 15
+Nota: facelo usando e sen usar a ecuación n ∗ (n + 1) / 2. Cal realiza máis operacións?
+6. Escribir un programa que tome unha cantidade m de valores ingresados polo usuario, a cada un lle calcule o factorial e imprima o resultado xunto co número de orden correspondiente. 
+
+
+7. Escribir un programa que imprima por pantalla tódalas fichas de dominó, de unha por liña e sen repetir.
+
+
+8. Modificar o programa anterior para que poida xerar fichas dun xogo que pode ter números de 0 a n.
+
+
+9. Calcula a cantidade de números negativos, positivos e ceros que hai nun grupo de 10 números enteiros.
+
+
+10. Deseña un programa que calcule o área dun rectángulo cuxa base e altura pides por teclado. Asegúrate que estes valores sexan positivos, para eso valida os datos.
+
+
+11. Codifica un programa que solicite un número e visualice a táboa de multiplicar dese número. O programa seguirá pedindo números ata que o usuario pulse o número cero.
+
+
+12. Codifica un programa que lea o soldo de cada un dos traballadores dunha empresa e obteña o número deles que ganan entre 1000 e 1750 €, ámbolos dous incluídos e, a porcentaxe de traballadores que ganan menos de 1000 €. Tendo en conta que non se coñece con antelación o numero de traballadores da empresa e non se admiten os soldos negativos (utiliza como condición de fin un soldo 0).
+
+
+13. Solicita o usuario un número n e debuxa un triángulo de base e altura n. Si o usuario teclea o número 4 o triángulo sería da seguinte forma:
+   *
+  * *
+ * * *
+* * * *
+14. Codificar o programa que solicite 10 números por consola e calcule a súa suma. Si o usuario introduce en calquera momento o número 999, deixa de solicitar máis números e presenta o valor da súma acadada ata ese momento. 
+
+
+
+PO-08-F04 R00 22/04/18

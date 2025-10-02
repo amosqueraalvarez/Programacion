@@ -1,0 +1,45 @@
+Boletín 2
+Organizar o programa mediante seudo código e ordinograma antes de facer a codificación.
+
+
+
+
+1. Deseña un algoritmo que calcule o área dun triángulo. A saída faise por pantalla. Para codificar este programa inicializa a base ao valor 4, e a altura ao valor 3. Codifica este programa nun script chamado boletin2_1.
+
+
+2. Realiza un ordinograma que permita calcular o área dun cadrado de 3 m de lado. De seguido crea un script, co nome boletin2_2, para executalo.
+
+
+3. Crea un algoritmo que cambie euros a dólares (O cambio pídese por teclado).   Codifica o programa, correspondente, para executar o programa co nome boletin2_3. 
+
+
+4. Deseña un ordinograma que lea 2 números e calcule a suma, despois a resta, a continuación o produto e por último o cociente. Amosa o resultado de cada operación. De seguido codifica o programa correspondente.
+
+
+5. Escribe un programa que lea o valor dunha distancia en millas mariñas e a pase a metros ( 1 milla mariña = 1852 m ).
+
+
+6. Realiza o ordinograma correspondente a un programa que saque por pantalla a         porcentaxe descontada nunha compra. Introducindo, por teclado, o prezo da tarifa e o prezo pagado.
+
+7. Realiza o ordinograma e despois codifica un programa que reciba como dato de entrada o valor dunha temperatura expresada en graos centígrados e calcule o seu equivalente en graos Fahrenheit e graos Kelvin.
+
+8. Deseña un programa para o software dunha máquina, que converta unha cantidade enteira de diñeiro, que está presentada en billetes de 100, 20, 5 e moedas de 1 €, no seu equivalente en euros. Por exemplo 2 billetes de 100€,         3 billetes de 20 €, 6 moedas de 1€ visualizaríamos 266 €.
+
+9. Realiza un algoritmo e codifica o programa correspondente que lea, dende o teclado, unha cantidade enteira en euros e amose, por pantalla, o seu desglose en billetes de 100, 20, 5 e moedas de 1 €.
+
+
+
+   10. Fai o algoritmo e programa que calcule o soldo bruto e líquido, a percibir por unha persoa. Para iso hai que ter en conta, que o soldo total inclúe os seguintes conceptos:
+
+      * Soldo         fixo.         
+        
+      * Comisión:         5% sobre importe total de vendas
+        
+      * Quilometraxe:         2 € por km
+        
+      * Dietas:         30 € por día de desprazamento.
+
+Para calcular o soldo líquido debemos descontarlle ao soldo bruto:
+         * I.R.P.F. = 18 % do soldo total.
+        
+         * Retención a seguridade social : 36 €.
