@@ -85,3 +85,19 @@ print(l2.count('d'))
 # da la vuelta a la lista de forma permanente
 
 # l2.reserve()
+
+
+# puedo usar un input para pedir una palabras y despues convertirlo a lista definiendo una variable= list(el nombre de la variable del input)
+# ejemplo boletin 6.6
+
+
+# se utiliza para ordenar los elementos de una lista de menor a mayor
+sorted(nombre_lista)
+# ejemplo boletin 6.8
+
+
+# me convina dos listas para iterar entre ellas
+zip(nombre_lista, nombre_lista2)
+# creo una variable donde quiero hacer la operacion, llamo a cada elemento de la lista x,y dentro de un for in zip(lista1, lista2)
+# asi puedo hacer que x*y en cada iteracion de la lista por zip
+# ejemplo boletin 6.9
