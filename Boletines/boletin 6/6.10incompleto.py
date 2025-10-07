@@ -20,9 +20,6 @@ matriz2 = [
     [1, 1]
 ]
 
-print(matriz1)
-print(matriz2)
 
-
-calculo = sum(x for x in zip(matriz1, matriz2))
-print(calculo)
+producto_matrices = (((matriz1[0][0])*(matriz2[0][0]))+((matriz1[0][1])*(matriz2[1][0]))+((matriz1[0][2])*(matriz2[2][0])))-(
+    ((matriz1[1][0])*(matriz2[0][1]))+((matriz1[0][1])*(matriz2[1][0]))+((matriz1[0][2])*(matriz2[2][0])))

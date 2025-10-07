@@ -101,3 +101,9 @@ zip(nombre_lista, nombre_lista2)
 # creo una variable donde quiero hacer la operacion, llamo a cada elemento de la lista x,y dentro de un for in zip(lista1, lista2)
 # asi puedo hacer que x*y en cada iteracion de la lista por zip
 # ejemplo boletin 6.9
+
+
+# metodo sum
+# suma cada elemento de la lista
+
+suma = sum(nombre_de_la_lista)
