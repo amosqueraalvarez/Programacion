@@ -21,3 +21,5 @@ for letra in lista_consonantes:
         contador += 1
 
 print(contador)
+
+# prueba
