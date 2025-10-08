@@ -17,9 +17,7 @@ print(lista_consonantes)
 
 contador = 0
 for letra in lista_consonantes:
-    if letra in texto:
+    if lista_consonantes[letra] in range(len(texto)):
         contador += 1
 
 print(contador)
-
-# prueba
