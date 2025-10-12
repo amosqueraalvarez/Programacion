@@ -16,7 +16,9 @@ limpa = limpiadorCadenas('   pepipto monero  ')
 print(limpa)
 
 
-# forma simple de hacer lo def limpiadorCadenas(cadea):
+# forma simple de hacer lo mismo
+
+def limpiadorCadenas(cadea):
     inicio = 0
     fin = len(cadea)
 
@@ -25,4 +27,10 @@ print(limpa)
     while fin > inicio and cadea[fin - 1] == ' ':
         fin -= 1
     return cadea[inicio:fin]
-
+    
+'''
+Ejercicio en pseudocodigo
+para cada índice desde el final hasta el principio:
+    si es espacio, recorto
+    si no, me detengo
+'''
