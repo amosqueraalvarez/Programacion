@@ -14,3 +14,15 @@ def limpiadorCadenas(cadea):
 
 limpa = limpiadorCadenas('   pepipto monero  ')
 print(limpa)
+
+
+# forma simple de hacer lo def limpiadorCadenas(cadea):
+    inicio = 0
+    fin = len(cadea)
+
+    while inicio < fin and cadea[inicio] == ' ':
+        inicio += 1
+    while fin > inicio and cadea[fin - 1] == ' ':
+        fin -= 1
+    return cadea[inicio:fin]
+
