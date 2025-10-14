@@ -105,6 +105,23 @@ def datosPersoa(dni, nome, **datosExtendidos):
     for k, v in datosExtendidos.items():
         print(k, 'e', v)
 
+
     # definir como traballa cos datos
 # datosPersoa('333j', 'manuel', altura=1.82, peso=71)
 datosPersoa('333j', 'adrian', altura=176, peso=75, ciudad='vigo')
+
+# funcion con parametro
+
+
+def saludar(nombre):
+    print("Hola,", nombre)
+
+# funcion con varios parametros
+
+
+def sumar(a, b):
+    resultado = a + b
+    print("La suma es:", resultado)
+
+
+sumar(5, 3)
