@@ -7,3 +7,9 @@ def remove_exclamation_marks(s):
 
 
 print(remove_exclamation_marks('!ho!a'))
+
+# forma comun y mas simple de la comunidad
+
+
+def remove_exclamation_marks(s):
+    return s.replace('!', '')
