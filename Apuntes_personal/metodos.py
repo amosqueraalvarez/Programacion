@@ -20,13 +20,13 @@
 • .insert(i, x) → Inserta en una posición
 • .remove(x) → Elimina la primera aparición de un valor
 • .pop(i) → Elimina y devuelve el elemento
-• .sort() → Ordena la lista
+• .sort() → Ordena la lista en el mismo lugar(modifica la original) se puede combinar con reverse para invertir el orden
 • .reverse() → Invierte el orden
 • .index(x) → Devuelve posición de un valor
 • .count(x) → Cuenta cuántas veces aparece
 • .copy() → Copia la lista
 • .clear() → Vacía la lista
-
+. sorted(listanum) devuelve una lista nueva ordenada sin modificar la original
 
 3. Tuplas(tuple)
 • .count(x) → Cuenta cuántas veces aparece un valor
