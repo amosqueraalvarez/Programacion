@@ -1,4 +1,4 @@
-# sustituir acentos
+# sustituir acentos por letra
 
 def acentos(letra):
     if letra == 'á':
@@ -14,3 +14,22 @@ def acentos(letra):
 
 
 print(acentos('é'))
+
+# sustituir acentos por palabra
+
+
+def char_acentos(palabra):
+    for char in palabra:
+        if char == 'á':
+            return palabra.replace('á', 'a')
+        if char == 'é':
+            return palabra.replace('é', 'e')
+        if char == 'í':
+            return palabra.replace('í', 'i')
+        if char == 'ó':
+            return palabra.replace('ó', 'o')
+        if char == 'ú':
+            return palabra.replace('ú', 'u')
+
+
+print(char_acentos('frigorífico'))

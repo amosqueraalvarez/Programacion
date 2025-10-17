@@ -5,4 +5,5 @@
 lista = []
 numero_k = 3
 
-for numero in lista
+# or numero in lista:
+# return
