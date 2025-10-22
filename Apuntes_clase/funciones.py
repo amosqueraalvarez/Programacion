@@ -105,7 +105,6 @@ def datosPersoa(dni, nome, **datosExtendidos):
     for k, v in datosExtendidos.items():
         print(k, 'e', v)
 
-
     # definir como traballa cos datos
 # datosPersoa('333j', 'manuel', altura=1.82, peso=71)
 datosPersoa('333j', 'adrian', altura=176, peso=75, ciudad='vigo')
@@ -125,3 +124,8 @@ def sumar(a, b):
 
 
 sumar(5, 3)
+
+
+# llamar a una funcion por valores por defecto
+
+# def xogo(7):

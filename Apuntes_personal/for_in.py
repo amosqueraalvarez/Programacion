@@ -57,7 +57,7 @@ for indice, valor in enumerate(variable):
     # indice → la posición del elemento (0, 1, 2, …)
     # valor → el elemento en esa posición
     # Ejemplo
-numeros = [10, 20, 30]
+    numeros = [10, 20, 30]
 
 for i, n in enumerate(numeros):
     print("Índice:", i, "→ Valor:", n)

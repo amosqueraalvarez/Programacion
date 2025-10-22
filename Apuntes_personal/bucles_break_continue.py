@@ -5,6 +5,8 @@
 # 🟡 continue → salta al siguiente ciclo del bucle.
 # 🔴 break — interrumpe el bucle
 # Cuando Python encuentra break, sale del bucle inmediatamente, sin ejecutar lo que quede dentro.
+
+
 # Ejemplo:
 for numero in range(1, 6):
     if numero == 3:
@@ -23,6 +25,8 @@ print("Fin del bucle")
 # Cuando quieres detener el bucle antes de que termine (por ejemplo, al encontrar un valor específico).
 # 🟡 continue — salta a la siguiente iteración
 # uando Python encuentra continue, no termina el bucle, sino que salta al siguiente ciclo, omitiendo el resto del código dentro del bucle para esa vuelta.
+
+
 # Ejemplo:
 for numero in range(1, 6):
     if numero == 3:
