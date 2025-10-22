@@ -25,3 +25,22 @@ print(so_vogais)
 
 
 # Substitúa cada vogal pola súa seguinte vogal. Por exemplo, se recibe ‘vestiario’ debe devoltar ‘vostoerou’.
+
+vogais_dic = {'a': 'e',
+              'e': 'i',
+              'i': 'o',
+              'o': 'u',
+              'u': 'a'}
+
+texto5 = 'vestiario'
+texto_nuevo = ''
+
+for char in texto5:
+    if char in vogais_dic:
+        texto_nuevo = texto_nuevo + vogais_dic[char]
+    else:
+        texto_nuevo = texto_nuevo + char
+print(texto_nuevo)
+
+# importante no usar replace para este tipo de ejercicio porque remplaza cada letra y vuelve a iterar sobre ella y no da el
+# resultado correcto; mejor usar una nueva variable y guardar los valores

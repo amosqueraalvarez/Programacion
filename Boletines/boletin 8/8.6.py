@@ -1,7 +1,6 @@
 # 6.Dada unha lista de números enteiros, escribir unha función que:
+
 # Devolte unha lista con tódolos que sexan primos.
-# Devolte o sumatorio e o promedio dos valores.
-# Devolte unha lista co factorial de cada un de eses números.
 
 
 # Devolte o sumatorio e o promedio dos valores.

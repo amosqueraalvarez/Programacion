@@ -105,6 +105,7 @@ def datosPersoa(dni, nome, **datosExtendidos):
     for k, v in datosExtendidos.items():
         print(k, 'e', v)
 
+
     # definir como traballa cos datos
 # datosPersoa('333j', 'manuel', altura=1.82, peso=71)
 datosPersoa('333j', 'adrian', altura=176, peso=75, ciudad='vigo')
@@ -129,3 +130,33 @@ sumar(5, 3)
 # llamar a una funcion por valores por defecto
 
 # def xogo(7):
+
+
+# por valor y referencia
+
+n1 = 2
+n2 = 1
+
+# cuadrado(n1):
+
+
+def cuadrado(numero):
+    numero = numero*numero
+    return numero
+
+
+print(cuadrado(n1))  # el resultado es 4 pero no modifica la variable que ya estaba
+print(n1)  # sigue valiendo 2 porque no le afecta lo que pase dentro de la funcion
+
+lista = [1, 2, 3, 4, 5]
+
+
+def duplicaLista(l):
+    for i, num in enumerate(l):
+        l[i] = num*2
+    return l
+
+
+# retorna la lista duplicada y en este caso si que cambia el valor de lista porque es un objeto
+print(duplicaLista(lista))
+print(lista)  # tiene un valor duplicado por la funcion que si que modifica la original
