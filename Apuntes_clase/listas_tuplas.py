@@ -107,3 +107,15 @@ zip(nombre_lista, nombre_lista2)
 # suma cada elemento de la lista
 
 suma = sum(nombre_de_la_lista)
+
+# Anidar listas
+
+cajas = [['Caja1', [[10, 2], [10, 1], [5, 2]]],
+         ['Caja2', [[10, 1], [2, 3], [1, 5]]],
+         ['Caja3', [[5, 1], [2, 3], [0.5, 2]]]]
+
+# por cada caja dentro de la lista me devuelve el contenido dentro de ella
+for caja in cajas:
+    monedas = caja[1]
+    for i, u in monedas:
+        print(i*u)
