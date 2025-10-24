@@ -19,8 +19,12 @@ def cuentas_caja(nombre):
             total_caja = 0
             for i, u in efectivo:
                 total_caja = total_caja + i*u
-                print('De:', i, '€', 'una cantidad de:',
-                      u, 'y hace un total de:', i*u, '€')
+                if i > 2:
+                    print('De billetes de:', i, '€', 'hay una cantidad de:',
+                          u)
+                elif i < 2:
+                    print('De monedas de:', i, '€', 'hay una cantidad de:',
+                          u)
             print('Y tiene un total de: ', total_caja, '€')
 
 
@@ -50,7 +54,27 @@ def total_cajas_recuento():
           total5, 'De 1€ hay:', total1, 'entre todas las cajas del supermercado')
 
 
-total_cajas_recuento()
-bienvenida()
-cuentas_caja('Caja2')
-total_cajas()
+while True:
+    print('''Bienvenido al supermercado, las opciones a elegir son las siguientes:
+[1] Ver total de una caja por cantidad de efectivo y total de la caja
+[2] Ver total del día 
+[3] Ver recuento total de las cajas por cantidad de efectivo 
+[4] Salir del menú 
+''')
+    opcion = int(input('Elija una opcion del menú: '))
+    if opcion == 1:
+        bienvenida()
+        print('')
+        nombre = str(input('Nombre de caja: '))
+        print('')
+        cuentas_caja(nombre)
+        print('')
+    elif opcion == 2:
+        total_cajas()
+        print('')
+    elif opcion == 3:
+        total_cajas_recuento()
+        print('')
+    elif opcion == 4:
+        print('Gracias por su visita')
+        break
