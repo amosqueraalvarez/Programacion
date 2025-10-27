@@ -25,7 +25,7 @@ def cuentas_caja(nombre):
                 elif i < 2:
                     print('De monedas de:', i, '€', 'hay una cantidad de:',
                           u)
-            print('Y tiene un total de: ', total_caja, '€')
+            print('Y la caja total es: ', total_caja, '€')
 
 
 def total_cajas():
@@ -50,8 +50,8 @@ def total_cajas_recuento():
                 total5 += u
             if i == 1:
                 total1 += u
-    print('De 10€ hay:', total10, 'De 5€ hay:',
-          total5, 'De 1€ hay:', total1, 'entre todas las cajas del supermercado')
+    print('De 10€ hay:', total10, 'billetes ', 'De 5€ hay:',
+          total5, 'billetes ', 'De 1€ hay:', total1, 'monedas ''entre todas las cajas del supermercado')
 
 
 while True:
