@@ -21,5 +21,6 @@ matriz2 = [
 ]
 
 
-producto_matrices = (((matriz1[0][0])*(matriz2[0][0]))+((matriz1[0][1])*(matriz2[1][0]))+((matriz1[0][2])*(matriz2[2][0])))-(
-    ((matriz1[1][0])*(matriz2[0][1]))+((matriz1[0][1])*(matriz2[1][0]))+((matriz1[0][2])*(matriz2[2][0])))
+print((matriz1[0])[0])
+for i in matriz1:
+    (matriz1[0])[0]

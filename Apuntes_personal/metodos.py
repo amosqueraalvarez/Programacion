@@ -13,7 +13,8 @@
 • .endswith('y') → Comprueba si termina con 'y'
 • .isdigit() → True si son solo números
 • .isalpha() → True si son solo letras
-• .isalnum() → True si son letras y números
+• .isdecimal() → True si todos los caracteres son decimales
+
 '''
 texto = "  hola mundo  "
 
@@ -31,6 +32,7 @@ print(texto.strip().startswith('h'))  # True
 print("123".isdigit())      # True
 print("abc".isalpha())      # True
 print("abc123".isalnum())   # True
+
 
 '''
 2. Listas(list)
