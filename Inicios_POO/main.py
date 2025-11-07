@@ -1,8 +1,10 @@
 # importar funcion de clases que tengo
 
+from circulo import Circulo
+from punto_1 import Punto
 from persoa_clase import Persoa
 from punto_1 import Punto  # from (archivo) import (objeto clase) Punto
-
+from cilindro import Cilindro
 p1 = Punto(2, 3)
 p2 = Punto(9, 1)
 
@@ -44,3 +46,16 @@ mario = Persoa(dni='00000000T', nome='mario', edade=3,
 print(mario == adrian)
 
 print(adrian < mario)
+
+
+c = Circulo(3, 4, 6)
+print(c.aCadea())
+
+d = Cilindro(3, 6, 8, 9)
+print(d.aCadea2())
+print(d.calcularAreaCil(9))
+print(d.calcularVolume(8))
+
+
+# esfera tiene volumen, superficie
+# cono volume,superficie,calcular seneratriz
