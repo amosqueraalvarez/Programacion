@@ -5,6 +5,9 @@ from punto_1 import Punto
 from persoa_clase import Persoa
 from punto_1 import Punto  # from (archivo) import (objeto clase) Punto
 from cilindro import Cilindro
+from esfera import Esfera
+from cono import Cono
+
 p1 = Punto(2, 3)
 p2 = Punto(9, 1)
 
@@ -59,3 +62,13 @@ print(d.calcularVolume(8))
 
 # esfera tiene volumen, superficie
 # cono volume,superficie,calcular seneratriz
+
+w = Esfera(3, 4, 5)
+print(w.obtenerSuperficieEsfera())
+print(w.obtenerVolumenEsfera())
+
+
+con = Cono(2, 4, 6, 5)
+print(con.calcularGeneratrizCono())
+print(con.calcularVolumenCono())
+print(con.calcularSuperficieCono())
