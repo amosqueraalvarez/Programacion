@@ -11,5 +11,5 @@ class Esfera(Circulo):
         return 'O volume da esfera e: ', volumen
 
     def obtenerSuperficieEsfera(self):
-        supercifie = 4*math.pi*self.radio**2
+        supercifie = 4*super().calcularArea(self.radio)  # importante
         return 'A superficie da esfera e: ', supercifie

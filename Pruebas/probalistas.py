@@ -42,7 +42,7 @@ def temp_dias(dias, lista, parametro):
         dia = dias[i]
         temperatura = lista[i]
         if temperatura > parametro:
-            print('La temnperatura en ', dia, 'es superior')
+            print('La temperatura en ', dia, 'es superior')
         else:
             print('La temperatura en ', dia, 'NO fue superior')
 

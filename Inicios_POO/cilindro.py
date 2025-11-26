@@ -5,7 +5,9 @@ import math
 class Cilindro(Circulo):
     def __init__(self, x, y, radio, longitud):
         super(). __init__(x, y, radio)  # llamamos con super los datos de punto
-        self.longitud = longitud  # definimos la variable nueva que aparece en circulo
+        # definimos la variable nueva que aparece en circulo
+        # se usa abs que da el valor absoluto y si es negativo lo convierte a entero
+        self.longitud = abs(longitud)
 
     def calcularVolume(self,  longitud):
         perimetro = longitud*(self.radio**2)*math.pi
@@ -15,6 +17,13 @@ class Cilindro(Circulo):
         area = (2 * math.pi * self.radio) + \
             (2 * math.pi * self.radio * self.longitud)
         return 'A area e: ', area
+
+    # calcular area del circulo resuelto en clase
+
+    def calcularArea(self):
+        return super().calcularArea() * 2 + super().calcularPerimetro() * self.longitud
+    # acostumnbrate a aprovechar los metodos que ya tenias creados en otras clase para escribir menos codigo
+    # usa super().funcion  para aprovechar el resultado que ya tenias
 
     def aCadea2(self):
         cadea = super().aCadea() + '\n longitud : ' + \

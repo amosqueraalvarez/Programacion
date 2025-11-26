@@ -63,12 +63,11 @@ print(d.calcularVolume(8))
 # esfera tiene volumen, superficie
 # cono volume,superficie,calcular seneratriz
 
-w = Esfera(3, 4, 5)
-print(w.obtenerSuperficieEsfera())
-print(w.obtenerVolumenEsfera())
-
 
 con = Cono(2, 4, 6, 5)
 print(con.calcularGeneratrizCono())
 print(con.calcularVolumenCono())
 print(con.calcularSuperficieCono())
+
+zi = Esfera(3, 6, 8)
+print(zi.obtenerSuperficieEsfera())
