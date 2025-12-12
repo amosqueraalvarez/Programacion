@@ -16,6 +16,7 @@ p2 = Punto(9, 1)
 print(p1 == p2)
 p2.x = 2
 p2.y = 3
+
 print(p1 == p2)
 
 # toString es el metodo que cree en la funcion dentro del objeto
@@ -37,6 +38,9 @@ print(p1.x)
 print(p1 == p2)
 p1 = p2
 p3 = p1
+p4 = Punto(6, 7)
+p5 = Punto(8, 1)
+print('Distancia p4 e p5', str(p4.distanciaEntreDosPuntos(p5)))
 
 # lo que va a hacer es que todas apunten a p1 y pierdan sus propiedades p2 y p3
 # p1 pasa a tener el valor de p2 y p3 apunta a p1 que va a p2
