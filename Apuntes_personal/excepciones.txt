@@ -1,0 +1,216 @@
+Aquí tienes un **manual completo y claro de excepciones en Python** 🐍⚠️. Te servirá mucho para hacer programas más seguros (como tu juego).
+
+---
+
+# 📘 MANUAL: EXCEPCIONES EN PYTHON
+
+---
+
+# 1️⃣ ¿Qué es una excepción?
+
+Una excepción es un **error que ocurre mientras se ejecuta el programa**.
+
+Ejemplo:
+
+```python
+x = int("hola")
+```
+
+💥 Error:
+
+```
+ValueError
+```
+
+---
+
+# 2️⃣ Estructura básica
+
+```python
+try:
+    # código que puede fallar
+except:
+    # qué hacer si hay error
+```
+
+---
+
+# 3️⃣ Ejemplo básico
+
+```python
+try:
+    numero = int(input("Introduce un número: "))
+except:
+    print("Eso no es un número")
+```
+
+---
+
+# 4️⃣ Capturar errores específicos
+
+Es mejor especificar el tipo de error:
+
+```python
+try:
+    numero = int(input("Introduce un número: "))
+except ValueError:
+    print("Error: debes introducir un número")
+```
+
+---
+
+# 5️⃣ Capturar el error en una variable
+
+```python
+try:
+    x = int("hola")
+except ValueError as e:
+    print("Ha ocurrido un error:", e)
+```
+
+---
+
+# 6️⃣ Múltiples excepciones
+
+```python
+try:
+    x = int(input("Número: "))
+    y = 10 / x
+except ValueError:
+    print("No es un número")
+except ZeroDivisionError:
+    print("No puedes dividir entre 0")
+```
+
+---
+
+# 7️⃣ `else` (si todo va bien)
+
+```python
+try:
+    x = int(input("Número: "))
+except ValueError:
+    print("Error")
+else:
+    print("Número correcto:", x)
+```
+
+---
+
+# 8️⃣ `finally` (siempre se ejecuta)
+
+```python
+try:
+    archivo = open("datos.txt")
+except FileNotFoundError:
+    print("No existe el archivo")
+finally:
+    print("Esto siempre se ejecuta")
+```
+
+---
+
+# 9️⃣ Ejemplo con archivos
+
+```python
+try:
+    with open("datos.txt", "r") as f:
+        print(f.read())
+except FileNotFoundError:
+    print("El archivo no existe")
+```
+
+---
+
+# 🔟 Lanzar tus propias excepciones
+
+```python
+edad = -5
+
+if edad < 0:
+    raise ValueError("La edad no puede ser negativa")
+```
+
+---
+
+# 1️⃣1️⃣ Ejemplo aplicado a tu juego ⚔️
+
+```python
+def atacar(self, enemigo):
+    try:
+        daño = self.daño(enemigo)
+        enemigo.vida -= daño
+    except AttributeError:
+        print("El enemigo no es válido")
+```
+
+---
+
+# 1️⃣2️⃣ Buenas prácticas
+
+✔ Usa excepciones específicas (`ValueError`, etc.)
+✔ No uses `except:` solo (mala práctica)
+✔ Usa `with` para archivos
+✔ Usa excepciones para errores reales, no para lógica normal
+
+---
+
+# 🚫 Mala práctica
+
+```python
+try:
+    x = int(input())
+except:
+    pass   # ❌ oculta errores
+```
+
+---
+
+# 🧠 RESUMEN RÁPIDO
+
+```python
+try:
+    # código
+except Error:
+    # si falla
+else:
+    # si todo va bien
+finally:
+    # siempre
+```
+
+---
+
+# 🚀 TIP PRO
+
+Puedes capturar varias excepciones a la vez:
+
+```python
+except (ValueError, TypeError):
+    print("Error de tipo")
+```
+
+---
+
+# 🎮 BONUS (muy útil para tu nivel)
+
+Validar input correctamente:
+
+```python
+while True:
+    try:
+        opcion = int(input("Elige opción: "))
+        break
+    except ValueError:
+        print("Introduce un número válido")
+```
+
+---
+
+Si quieres, puedo ayudarte a:
+
+* ⚔️ añadir manejo de errores a tu juego completo
+* 💾 controlar errores al guardar archivos
+* 🎮 hacer menús seguros sin que el programa se rompa
+
+y dejar tu proyecto **mucho más profesional** 😎

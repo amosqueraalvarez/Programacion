@@ -1,0 +1,200 @@
+Aquí tienes un **manual claro y completo para usar ficheros en Python** 📂🐍. Está pensado para que lo entiendas rápido y puedas usarlo en tus programas.
+
+---
+
+# 📘 MANUAL DE FICHEROS EN PYTHON
+
+---
+
+# 1️⃣ Abrir un archivo
+
+Se usa la función `open()`:
+
+```python
+archivo = open("datos.txt", "r")
+```
+
+### Modos de apertura:
+
+| Modo  | Significado                |
+| ----- | -------------------------- |
+| `"r"` | Leer (read)                |
+| `"w"` | Escribir (borra todo)      |
+| `"a"` | Añadir (append)            |
+| `"x"` | Crear (error si ya existe) |
+
+---
+
+# 2️⃣ Cerrar un archivo
+
+```python
+archivo.close()
+```
+
+⚠️ Importante: si no lo cierras, puede dar problemas.
+
+---
+
+# 3️⃣ Forma recomendada (`with`)
+
+```python
+with open("datos.txt", "r") as archivo:
+    contenido = archivo.read()
+```
+
+✔ Se cierra automáticamente
+✔ Más seguro y profesional
+
+---
+
+# 4️⃣ Leer archivos
+
+## Leer todo el contenido
+
+```python
+with open("datos.txt", "r") as archivo:
+    texto = archivo.read()
+    print(texto)
+```
+
+---
+
+## Leer línea por línea
+
+```python
+with open("datos.txt", "r") as archivo:
+    for linea in archivo:
+        print(linea)
+```
+
+---
+
+## Leer una sola línea
+
+```python
+linea = archivo.readline()
+```
+
+---
+
+# 5️⃣ Escribir en archivos
+
+⚠️ `"w"` borra el contenido anterior
+
+```python
+with open("datos.txt", "w") as archivo:
+    archivo.write("Hola mundo\n")
+```
+
+---
+
+# 6️⃣ Añadir contenido (sin borrar)
+
+```python
+with open("datos.txt", "a") as archivo:
+    archivo.write("Nueva línea\n")
+```
+
+---
+
+# 7️⃣ Escribir varias líneas
+
+```python
+lineas = ["Linea 1\n", "Linea 2\n", "Linea 3\n"]
+
+with open("datos.txt", "w") as archivo:
+    archivo.writelines(lineas)
+```
+
+---
+
+# 8️⃣ Trabajar con rutas
+
+## Archivo en la misma carpeta
+
+```python
+open("datos.txt")
+```
+
+## Ruta completa
+
+```python
+open("/Users/tu_usuario/documentos/datos.txt")
+```
+
+---
+
+# 9️⃣ Ejemplo práctico (tu juego)
+
+Guardar personajes:
+
+```python
+with open("personajes.txt", "a") as archivo:
+    archivo.write("Goku - Vida: 100\n")
+```
+
+---
+
+# 🔟 Leer datos guardados
+
+```python
+with open("personajes.txt", "r") as archivo:
+    for linea in archivo:
+        print(linea)
+```
+
+---
+
+# 1️⃣1️⃣ Manejo de errores
+
+```python
+try:
+    with open("datos.txt", "r") as archivo:
+        print(archivo.read())
+except FileNotFoundError:
+    print("El archivo no existe")
+```
+
+---
+
+# 1️⃣2️⃣ Buenas prácticas
+
+✔ Usa siempre `with`
+✔ Usa `"a"` para no borrar datos
+✔ Añade `\n` para saltos de línea
+✔ Controla errores con `try/except`
+
+---
+
+# 🎯 RESUMEN RÁPIDO
+
+```python
+# Leer
+with open("archivo.txt", "r") as f:
+    print(f.read())
+
+# Escribir (borra)
+with open("archivo.txt", "w") as f:
+    f.write("texto")
+
+# Añadir (no borra)
+with open("archivo.txt", "a") as f:
+    f.write("más texto\n")
+```
+
+---
+
+# 🚀 EXTRA (nivel siguiente)
+
+Si quieres avanzar más, puedes aprender:
+
+* 📦 Guardar datos en **JSON**
+* 🧠 Guardar objetos (como tus personajes)
+* 💾 Crear sistema de guardado/carga para tu juego
+* 📊 Leer datos y convertirlos en variables
+
+---
+
+Si quieres, en el siguiente paso puedo hacerte:
+
+👉 un **sistema real de guardado para tu juego de Personajes** (guardar y cargar partidas como un juego de verdad 🎮).

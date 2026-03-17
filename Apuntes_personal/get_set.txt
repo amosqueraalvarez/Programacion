@@ -1,0 +1,173 @@
+Aquí tienes un **manual claro y práctico de getters y setters en Python** 🐍. Te servirá mucho para POO (como tu clase `Personaje`).
+
+---
+
+# 📘 MANUAL: GETTERS Y SETTERS EN PYTHON
+
+---
+
+# 1️⃣ ¿Qué son?
+
+* **Getter (get)** → sirve para **obtener** un valor
+* **Setter (set)** → sirve para **modificar** un valor
+
+👉 Se usan para **controlar cómo se accede a los atributos**
+
+---
+
+# 2️⃣ ¿Por qué usarlos?
+
+Porque así puedes:
+
+✔ Proteger datos
+✔ Validar valores
+✔ Evitar errores
+✔ Controlar cambios
+
+---
+
+# 3️⃣ Forma básica (manual)
+
+```python
+class Persona:
+
+    def __init__(self, nombre, edad):
+        self._edad = edad   # _ = "protegido"
+
+    # Getter
+    def get_edad(self):
+        return self._edad
+
+    # Setter
+    def set_edad(self, nueva_edad):
+        if nueva_edad >= 0:
+            self._edad = nueva_edad
+        else:
+            print("Edad no válida")
+```
+
+---
+
+## Uso:
+
+```python
+p = Persona("Adrian", 20)
+
+print(p.get_edad())   # obtener
+p.set_edad(25)        # modificar
+```
+
+---
+
+# 4️⃣ Forma moderna (con `@property`) ⭐
+
+Python tiene una forma más elegante:
+
+```python
+class Persona:
+
+    def __init__(self, edad):
+        self._edad = edad
+
+    @property
+    def edad(self):
+        return self._edad
+
+    @edad.setter
+    def edad(self, valor):
+        if valor >= 0:
+            self._edad = valor
+        else:
+            print("Edad no válida")
+```
+
+---
+
+## Uso (como si fuera una variable normal)
+
+```python
+p = Persona(20)
+
+print(p.edad)   # getter
+p.edad = 30     # setter
+```
+
+👉 Parece un atributo normal, pero está controlado.
+
+---
+
+# 5️⃣ Ejemplo aplicado a tu juego ⚔️
+
+```python
+class Personaje:
+
+    def __init__(self, nombre, vida):
+        self.nombre = nombre
+        self._vida = vida
+
+    @property
+    def vida(self):
+        return self._vida
+
+    @vida.setter
+    def vida(self, valor):
+        if valor < 0:
+            self._vida = 0
+        else:
+            self._vida = valor
+```
+
+---
+
+## Uso:
+
+```python
+goku = Personaje("Goku", 100)
+
+goku.vida -= 150   # no baja de 0
+print(goku.vida)
+```
+
+---
+
+# 6️⃣ Cuándo usar getters y setters
+
+✔ Cuando quieres validar datos
+✔ Cuando no quieres acceso directo
+✔ Cuando el valor puede cambiar con lógica
+
+---
+
+# 7️⃣ Cuándo NO usarlos
+
+❌ Para todo sin necesidad
+❌ Si no hay lógica (Python suele usar atributos directos)
+
+---
+
+# 🧠 RESUMEN RÁPIDO
+
+| Método | Para qué sirve        |
+| ------ | --------------------- |
+| Getter | Leer valor            |
+| Setter | Modificar con control |
+
+---
+
+# 🚀 Consejo PRO
+
+En Python moderno:
+
+👉 Usa siempre `@property` en vez de `get_` y `set_`
+
+Es más limpio y más “pythonic”.
+
+---
+
+Si quieres, puedo ayudarte a:
+
+* 🔒 aplicar getters/setters a **tu clase Personaje completa**
+* ⚔️ evitar que la vida sea negativa automáticamente
+* 🎮 añadir límites, energía, mana, etc.
+
+y dejar tu código a nivel **pro de clase** 😎

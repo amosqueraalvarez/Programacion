@@ -1,0 +1,176 @@
+Aquí tienes un **manual claro para añadir datos a un archivo JSON en Python** 🐍📦 (muy útil para guardar cosas como tus personajes).
+
+---
+
+# 📘 ¿Qué es un JSON?
+
+Es un formato para guardar datos, parecido a un diccionario:
+
+```json
+{
+  "nombre": "Goku",
+  "vida": 100
+}
+```
+
+---
+
+# 1️⃣ Importar el módulo
+
+```python
+import json
+```
+
+---
+
+# 2️⃣ ⚠️ IMPORTANTE
+
+Los JSON **no se pueden “añadir directamente” como un `.txt`**.
+
+👉 Tienes que hacer 3 pasos:
+
+1. Leer el archivo
+2. Modificar los datos
+3. Guardarlo otra vez
+
+---
+
+# 3️⃣ Ejemplo básico (añadir datos)
+
+## Supongamos que tienes `personajes.json`:
+
+```json
+[]
+```
+
+---
+
+## Código para añadir un personaje:
+
+```python
+import json
+
+nuevo_personaje = {
+    "nombre": "Goku",
+    "vida": 100
+}
+
+# 1. Leer archivo
+with open("personajes.json", "r") as f:
+    datos = json.load(f)
+
+# 2. Añadir dato
+datos.append(nuevo_personaje)
+
+# 3. Guardar archivo
+with open("personajes.json", "w") as f:
+    json.dump(datos, f, indent=4)
+```
+
+---
+
+# 4️⃣ Resultado en el JSON
+
+```json
+[
+    {
+        "nombre": "Goku",
+        "vida": 100
+    }
+]
+```
+
+---
+
+# 5️⃣ Añadir varios personajes
+
+```python
+datos.append({"nombre": "Guts", "vida": 100})
+datos.append({"nombre": "Jana", "vida": 80})
+```
+
+---
+
+# 6️⃣ Si el archivo no existe
+
+```python
+import json
+
+nuevo = {"nombre": "Goku", "vida": 100}
+
+try:
+    with open("personajes.json", "r") as f:
+        datos = json.load(f)
+except:
+    datos = []
+
+datos.append(nuevo)
+
+with open("personajes.json", "w") as f:
+    json.dump(datos, f, indent=4)
+```
+
+---
+
+# 7️⃣ Leer datos del JSON
+
+```python
+with open("personajes.json", "r") as f:
+    datos = json.load(f)
+
+for personaje in datos:
+    print(personaje["nombre"], personaje["vida"])
+```
+
+---
+
+# 8️⃣ Ejemplo PRO (tu juego ⚔️)
+
+```python
+def guardar_personaje(personaje):
+    import json
+
+    datos_personaje = {
+        "nombre": personaje.nombre,
+        "vida": personaje.vida,
+        "fuerza": personaje.fuerza
+    }
+
+    try:
+        with open("personajes.json", "r") as f:
+            datos = json.load(f)
+    except:
+        datos = []
+
+    datos.append(datos_personaje)
+
+    with open("personajes.json", "w") as f:
+        json.dump(datos, f, indent=4)
+```
+
+---
+
+# 🧠 RESUMEN
+
+❌ JSON no funciona como `"a"` (append directo)
+✔ Siempre: leer → modificar → guardar
+
+---
+
+# 🚀 CONSEJO PRO
+
+Usa `indent=4` para que el JSON sea legible:
+
+```python
+json.dump(datos, f, indent=4)
+```
+
+---
+
+Si quieres, en el siguiente paso puedo ayudarte a:
+
+* 🎮 guardar **todo tu sistema de combate en JSON**
+* 🔄 cargar personajes desde el archivo
+* 💾 hacer un sistema de **guardar/continuar partida**
+
+y convertir tu código en algo tipo videojuego real 😎
