@@ -21,7 +21,7 @@ txt_file.close()  # cerrar el fichero
 """
 
 # otra forma de hacerlo con with sin borrar datos o usar append
-
+"""
 with open("fichero.txt", "a") as archivo:  # se usa as para nombrar a la variable de esa manera
     archivo.write("Nueva linea de texto \n")
 
@@ -38,3 +38,4 @@ json_text = {"name": "Adrian", "surname": "Mosquera",
 json.dump(json_text, json_file)
 # los datos que quiero añadir, nombre del fichero donde se añaden los datos)
 # puedo usar despues de los dos parametros la palabra indent= numero para tener identacion en el fichero
+"""
